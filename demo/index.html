@@ -1,0 +1,49 @@
+﻿<!doctype html>
+<html>
+<head>
+
+  <title>_{{name}}__ Demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="../../tangere/tangere.html">
+  <link rel="import" href="../../paper-styles/demo-pages.html">
+  <link rel="import" href="../../at-doc-snippet/at-doc-snippet.html">
+  <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+  <link rel="import" href="../at-core-style-classes.html">
+
+  <style is="custom-style" include="demo-pages-shared-styles">
+    at-doc-snippet {
+      --at-doc-snippet-demo: {
+        padding: 0;
+      }
+    }
+    .container {
+      background-color: #ccc;
+      padding: 5px;
+      margin: 0;
+    }
+
+    .vertical-section-container {
+      max-width: 900px
+    }
+
+  </style>
+
+</head>
+<body unresolved class="fullbleed">
+  
+  <h1>_{{name}}_ Demo</h1>
+
+  <div class="vertical-section-container centered">
+    <h4>Show a use case</h4>
+    <at-doc-snippet>
+      <template>
+        <_{{name}}_></_{{name}}_>
+      </template>
+    </at-doc-snippet>
+
+  </div>
+</body>
+</html>

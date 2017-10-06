@@ -1,0 +1,55 @@
+﻿<link rel="import" href="../tangere/tangere.html">
+<link rel="import" href="../at-core-style-classes/at-core-style-classes.html">
+
+<!--
+    @element _{{name}}_
+
+    This is a basic sample web component. Please replace this text with a description of the purpose of the element
+
+-->
+
+<dom-module id="_{{name}}_">
+    <template>
+        <style include="at-core-style-classes"></style>
+        <style>
+            :host {
+                display: inline;
+                box-sizing: border-box;
+            }
+        </style>
+       
+        <div class="m">Hello, {{name}}</div>
+
+    </template>
+</dom-module>
+
+<script>
+  Polymer({
+    is: '_{{name}}_',
+    properties: {
+
+        /**
+        * The name of the person for the greeting.
+        * These inline comments will be shown on the documentation page
+        *
+        * @property name
+        */
+        name: {
+            type: String,
+            value: "World"
+        },
+    },
+
+    ready: function () {
+
+    },
+    attached: function () {
+
+    },
+
+    detached: function () {
+
+    },
+
+  });
+</script>
